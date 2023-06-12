@@ -1,0 +1,7 @@
+.sample2{
+    width: 200px;
+    height: 20px;
+    border-radius: 100px;
+    object-fit:cover;
+    object-position: center;
+}

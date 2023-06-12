@@ -1,0 +1,174 @@
+.uber{
+    background-color: black;
+    border: none;
+    height: 48px;
+    width: 106px;
+    color:white;
+    margin-right:8px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    
+}
+.uber:hover{
+    opacity:0.8;
+}
+
+.Amazon{
+    background-color: rgb(255, 216, 20);
+    height: 30px;
+    width: 140px;
+    border:none;
+    border-radius:15px;
+    cursor: pointer;
+}
+.Amazon:hover{
+    background-color: rgba(232, 229, 57, 0.984);
+}
+.geeks{
+   background-color: rgb(39, 174, 50);
+   height: 46px;
+   width: 98px;
+   border-radius:8px;
+   cursor: pointer;
+   color:white;
+   font-size: 15px;
+   border:none;
+   font-weight: bold;
+   transition: box-shadow 0.15s;
+}
+.geeks:hover{
+    box-shadow:0px 5px 10px rgba(0,0,0,0.15);
+}
+.GetStarted{
+    background-color: rgb(120, 60, 120);
+    width:130px;
+    height:44px;
+    color:white;
+    border-radius: 8px;
+    font-weight: bold;
+    border:none;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.GetStarted:hover{
+    opacity:0.8;
+}
+.Download{
+    background-color: white;
+    width:130px;
+    height:44px;
+    color:rgb(128, 60, 128);
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    
+}
+.Download:hover{
+    opacity:0.8;
+}
+.Applyoncompanywebsite{
+    background-color: rgb(60, 108, 153);
+   height: 42px;
+   width: 214px;
+   border-radius:37px;
+   cursor: pointer;
+   color:white;
+   border:none;
+   font-weight: bold;
+   transition: box-shadow 0.15s;
+}
+.Applyoncompanywebsite:hover{
+    box-shadow:0px 15px 20px rgba(0,0,0,0.15);
+}
+.Save{
+   background-color: white;
+   height: 40px;
+   width: 82px;
+   border-radius:40px;
+   cursor: pointer;
+   color:rgb(75, 121, 205);
+   border:rgb(61, 115, 172);
+   font-weight: bold;
+   border-width: 2px;
+   border-style: solid;
+   font-size:18px;
+
+}
+.amazonlink{
+    color:rgb(129, 181, 226);
+    font-size: 28px;
+}
+.title
+{
+    color:black;
+    font-weight: bold;
+    font-size: 28px;
+}
+.price{
+    color: rgba(23, 116, 34, 0.762);
+    font-weight: bold;
+    font-size: 24px;
+}
+.addtocart{
+    background-color: rgba(189, 189, 56, 0.689);
+    height:46px;
+    width:120px;
+    border-radius: 34px;
+    cursor: pointer;
+}
+.buynow{
+    background-color: orange;
+    height:46px;
+    width:120px;
+    border-radius: 34px;
+    cursor: pointer;
+}
+
+.back{
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+}
+.link{
+    
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+}
+.next{
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+}
+.stretch{
+    background-color: rgb(232, 169, 52);
+    font-size: 18px;
+    border:none;
+    color:white;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition:padding-top 1s,
+        padding-bottom 1s,
+        padding-left 1s,
+        padding-right 1s
+}
+.stretch:hover{
+    padding-top:16px;
+    padding-bottom:16px;
+    padding-left:25px;
+    padding-right:25px;
+}
