@@ -1,0 +1,273 @@
+// 1		JavaScript Program To Print Hello World
+
+            console.log("Hello, World!");
+
+// 2		JavaScript Function to Add Two Numbers
+            function addNumbers(num1, num2) {
+            return num1 + num2; 
+        }
+
+            console.log(addNumbers(5, 3));
+
+// 3		JavaScript Function to Find the Square Root
+            function squareRoot(number) {
+            return number ** 0.5;
+            }
+
+            console.log(squareRoot(36)); 
+
+// 4		JavaScript Function to Calculate the Area of a Triangle
+            function calculateTriangleArea(base, height) {
+            return (base * height) / 2;
+            }
+
+            console.log(calculateTriangleArea(5,8)); 
+
+// 5		JavaScript Function to Swap Two Variables
+            function swapVariables(a, b) {
+            [a, b] = [b, a];
+            return [a, b];
+            }
+
+            let x = 5;
+            let y = 10;
+            [x, y] = swapVariables(x, y);
+
+            console.log(x, y); 
+
+// 6		JavaScript Function to Convert Kilometers to Miles
+            function convertKilometersToMiles(kilometers) {
+            const conversionFactor = 0.621371;
+            return kilometers * conversionFactor;
+            }
+
+            console.log(convertKilometersToMiles(50));
+
+// 7		Javascript Function to Convert Celsius to Fahrenheit
+            function convertCelsiusToFahrenheit(celsius) {
+            return (celsius * 9/5) + 32;
+            }
+
+            console.log(convertCelsiusToFahrenheit(70)); 
+
+// 8		JavaScript Function To Work With Constants
+            const PI = 3.14;
+            const GRAVITY = 9.81;
+
+            console.log(PI); 
+            console.log(GRAVITY); 
+
+// 9		JavaScript Function to Write to Console
+            function writeToConsole(message) {
+            console.log("Message: " + message);
+            }
+
+            writeToConsole("Welcome to my Page"); 
+
+// 10		Javascript Program to Check if a number is Positive, Negative, or Zero
+            function checkNumber(num) {
+            if (num > 0) {
+                return "Positive";
+            } else if (num < 0) {
+                return "Negative";
+            } else {
+                return "Zero";
+            }
+            }
+
+            console.log(checkNumber(8));  
+            console.log(checkNumber(-6));
+            console.log(checkNumber(0));
+
+// 11		Javascript Program to Check if a Number is Odd or Even
+            function checkOddOrEven(number) {
+            if (number % 2 === 0) {
+                return "Even";
+            } else {
+                return "Odd";
+            }
+            }
+
+            console.log(checkOddOrEven(6)); 
+            console.log(checkOddOrEven(10)); 
+
+// 12		JavaScript Program to Find the Largest Among Three Numbers
+
+            function findLargestNumber(num1, num2, num3) {
+            let largest = num1;
+            if (num2 > largest) {
+                largest = num2;
+            }
+            if (num3 > largest) {
+                largest = num3;
+            }
+            return largest;
+            }
+
+            console.log(findLargestNumber(18, 5, 8)); 
+            console.log(findLargestNumber(-1, -5, -3));
+
+// 13		JavaScript Program to Check Prime Number
+            function checkPrimeNumber(number) {
+            if (number <= 1) {
+                return "Not a prime number";
+            }
+
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                return "Not a prime number";
+                }
+            }
+            return "Prime number";
+            }
+
+            console.log(checkPrimeNumber(7)); 
+            console.log(checkPrimeNumber(13)); 
+
+// 14		JavaScript Program to Print All Prime Numbers in an Interval (Eg: between 0 and 10)
+            function printPrimeNumbers(start, end) {
+            let primeNumbers = [];
+
+            for (let number = start; number <= end; number++) {
+                let isPrime = true;
+
+                if (number === 1) {
+                isPrime = false;
+                }
+
+                for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+                }
+
+                if (isPrime) {
+                primeNumbers.push(number);
+                }
+            }
+
+            console.log("Prime numbers between " + start + " and " + end + ":");
+            console.log(primeNumbers);
+            }
+
+            printPrimeNumbers(0, 10); 
+
+// 15		JavaScript Program to Find the Factorial of a Number
+            function findFactorial(number) {
+            if (number === 0 || number === 1) {
+                return 1;
+            }
+
+            let factorial = 1;
+
+            for (let i = 2; i <= number; i++) {
+                factorial *= i;
+            }
+
+            return factorial;
+            }
+
+            console.log(findFactorial(5)); 
+            console.log(findFactorial(0)); 
+
+// 16		JavaScript Program to Print the Fibonacci Sequence
+            function printFibonacciSequence(n) {
+            let sequence = [];
+            let num1 = 0;
+            let num2 = 1;
+
+            if (n === 1) {
+                sequence.push(num1);
+            } else if (n >= 2) {
+                sequence.push(num1);
+                sequence.push(num2);
+
+                for (let i = 2; i < n; i++) {
+                let nextNum = num1 + num2;
+                sequence.push(nextNum);
+                num1 = num2;
+                num2 = nextNum;
+                }
+            }
+
+            return sequence;
+            }
+
+            console.log(printFibonacciSequence(7));
+            console.log(printFibonacciSequence(5)); 
+
+// 17		JavaScript Program to Check Armstrong Number
+//          153 = 1*1*1 + 5*5*5 + 3*3*3
+//          1634 = 1*1*1*1 + 6*6*6*6* + 3*3*3*3 + 4*4*4*4
+            function checkArmstrongNumber(number) {
+            const numString = number.toString();
+            const numDigits = numString.length;
+            let sum = 0;
+
+            for (let i = 0; i < numDigits; i++) {
+                const digit = parseInt(numString[i]);
+                sum += Math.pow(digit, numDigits);
+            }
+
+            if (sum === number) {
+                return true;
+            } else {
+                return false;
+            }
+            }
+            console.log(checkArmstrongNumber(153)); 
+            console.log(checkArmstrongNumber(1634)); 
+
+
+// 18		JavaScript Program to Make a Simple Calculator
+            function calculate(num1, operator, num2) {
+            let result;
+
+            switch (operator) {
+                case "+":
+                result = num1 + num2;
+                break;
+                case "-":
+                result = num1 - num2;
+                break;
+                case "*":
+                result = num1 * num2;
+                break;
+                case "/":
+                result = num1 / num2;
+                break;
+                default:
+                result = "Invalid operator";
+            }
+
+            return result;
+            }
+
+            console.log(calculate(5, "+", 3)); 
+            console.log(calculate(10, "*", 4)); 
+            console.log(calculate(6, "/", 2)); 
+            console.log(calculate(8, "%", 2)); 
+
+// 19		JavaScript Program to Find HCF or GCD
+            function findHCF(num1, num2) {
+            while (num2 !== 0) {
+                let temp = num2;
+                num2 = num1 % num2;
+                num1 = temp;
+            }
+            return num1;
+            }
+
+            console.log(findHCF(36, 48)); 
+            console.log(findHCF(14, 28)); 
+
+// 20		JavaScript Program to Find LCM
+            function findLCM(num1, num2) {
+            const hcf = findHCF(num1, num2);
+            const lcm = (num1 * num2) / hcf;
+            return lcm;
+            }
+
+            console.log(findLCM(3, 4)); 
+            console.log(findLCM(6, 8)); 
